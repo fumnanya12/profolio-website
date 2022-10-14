@@ -284,7 +284,7 @@ transform: translateX(0);
 .section__title--services::after{
     content:'';
     display: block;
-    width: 2em;
+    width: 3em;
     height: 1px;
     margin: 0.5em auto 1em;
     background: var(--clr-light);
@@ -303,6 +303,7 @@ margin-bottom: 4em;
         display: flex;
         max-width: 1000px;
         margin-right:  auto;
+        margin-left: auto;
     }
 
 
