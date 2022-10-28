@@ -37,3 +37,43 @@ console.log(iconTheme)
 
 
 })
+/*========cookies=====*/
+const popUp=document.getElementById("cookiePopup");
+document.getElementById("acceptCookie").
+addEventListener("click",()=>{
+
+//create date object
+let d=new Date();
+
+d.setMinutes(2+d.getMinutes());
+// create a cookie withname= mycookieName, value= thisIs my cookie 
+document.cookie ="myCookieName=thisIsMyCookie; expires=" +d+";";
+//hide the popup
+popUp.classList.add("hide");
+popUp.classList.remove("show");
+});
+//check if cookie is already present
+
+const checkcookie=()=> {
+    //Read the cookie and spilt on"=""
+    let input =document.cookie.split("=");
+    //check for our cookie
+    if(input[0]=="myCookieName"){
+        //hide the popup
+    popUp.classList.add("hide");
+    popUp.classList.remove("show");
+    }
+    else{
+        //hide the popup
+    popUp.classList.add("show");
+    popUp.classList.remove("hide");
+    }
+};
+
+// check if cookie exists when page loads
+window.onload =() =>{
+    setTimeout(() =>{
+        checkcookie();
+
+    }, 2000);
+};

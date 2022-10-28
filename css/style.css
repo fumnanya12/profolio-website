@@ -226,8 +226,65 @@ transform: translateX(0);
 .hamburger::before{top: 6px;}
 .hamburger::after{bottom: 6px;}
 
+/*cookie*/
+#cookiePopup{
+    background-color: inherit;
+    position: absolute;
+    font-size: 14px;
+    width: 70vw;
+    max-width: 42.85em;
+    box-shadow: 0 0 2em rgba(5,0,31,.15);
+    font-family: "Poppins",sans-serif;
+    text-align: justify;
+    line-height: 1.8em;
+    padding: 2em 1.4em;
+    border-radius: 6px;
+    transition: all 0.5s ease-in;
+}
 
+#cookiePopup p{
+    text-align: center;
+    margin: 1.4em 0;
+}
+#cookiePopup button{
+    background-color: var(--clr-accent);
+    border: none;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 1em 1.4em;
+    display: block;
+    position: relative;
+    margin: auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#cookiePopup a{
+    color: var(--clr-accent);;
+}
+.hide{
+    visibility: hidden;
+    bottom: 0;
+    right: 2em;
+}
 
+.show{
+    visibility: visible;
+    bottom: 2em;
+    right: 2em;
+}
+@media only screen and (max-width: 37.5em){
+    #cookiePopup{
+        width: 100%;
+    }
+    .hide{
+        bottom: 2em;
+        right: 0;
+    }
+    .show{
+        right: 0;
+        bottom: 0;
+    }
+}
 
 
 /* intro section */
@@ -440,16 +497,23 @@ margin-bottom: 4em;
 /* individual portfolio item styles */
 
 .portfolio-item-individual{
-    padding: 0 2em 2em ;
-    max-width: 1000;
+    padding: 0 2em 2em;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 .portfolio-item-individual p{
-    max-width: 600px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
+.portfolio-item-individual img{
+    margin-left:  auto;
+    margin-right: auto;
+
+   
+}
+
 
 /*dark them*/
 body.dark-theme{
