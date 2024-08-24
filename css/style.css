@@ -23,9 +23,9 @@
     --fw-bold: 900;
 
     --fs-h1: 3rem;
-    --fs-h2: 7.25rem;
-    --fs-h3: 3.25rem;
-    --fs-body: 3rem;
+    --fs-h2: 2.5rem;
+    --fs-h3: 1.75rem;
+    --fs-body: 1rem;
 
     --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25),
         0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
@@ -35,7 +35,7 @@
     :root {
         --fs-h1: 4.5rem;
         --fs-h2: 3.75rem;
-        --fs-h3: 1.9rem;
+        --fs-h3: 2.5rem;
         --fs-body: 1.35em;
     }
 }
@@ -61,12 +61,14 @@ section {
 img {
     display: block;
     max-width: 100%;
+    height: auto;
 }
 
 .portfolio img {
-    height: 400px;
-    width: 600px;
+    height: auto;
+    width: 100%;
 }
+
 strong {
     font-weight: var(--fw-bold);
 }
@@ -99,7 +101,7 @@ strong {
 h1,
 h2,
 h3 {
-    line-height: 1;
+    line-height: 1.2;
     margin: 0;
 }
 
@@ -254,12 +256,9 @@ header {
     bottom: 6px;
 }
 
-
-
 /* Intro Section */
 .intro {
     position: relative;
-    
 }
 
 .intro__img {
@@ -293,6 +292,19 @@ header {
         position: relative;
         left: -1.5em;
         width: calc(100% + 1.5em);
+    }
+}
+
+@media (max-width: 599px) {
+    .intro {
+        display: block;
+        text-align: center;
+    }
+
+    .section__subtitle--intro {
+        text-align: center;
+        left: 0;
+        width: 100%;
     }
 }
 
@@ -341,7 +353,21 @@ header {
     }
 }
 
-.about-me{
+@media (max-width: 799px) {
+    .services {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service + .service {
+        margin-top: 2em;
+        margin-left: 0;
+    }
+}
+
+/* About Me Section */
+.about-me {
     background-color: var(--color-dark);
     color: var(--color-light);
 }
@@ -349,7 +375,6 @@ header {
 .about-body {
     max-width: 1000px;
     margin: 0 auto;
-
 }
 
 .about-me__img {
@@ -368,7 +393,9 @@ header {
     }
 
     .about-me__img {
-        box-shadow: var(--bs);
+        grid-area: img;
+        position: relative;
+        z-index: 2;
     }
 
     .section__title--about {
@@ -384,15 +411,23 @@ header {
         padding-left: 1em;
         padding-right: calc(200px + 4em);
     }
+}
 
-    .about-me__img {
-        grid-area: img;
-        position: relative;
-        z-index: 2;
+@media (max-width: 599px) {
+    .about-body {
+        display: block;
+        text-align: center;
+    }
+
+    .section__subtitle--about {
+        text-align: center;
+        left: 0;
+        width: 100%;
+        padding-right: 1em;
     }
 }
 
-/* My Work */
+/* My Work Section */
 .my-work {
     background-color: var(--color-dark);
     color: var(--color-light);
@@ -426,6 +461,12 @@ header {
     opacity: .75;
 }
 
+@media (max-width: 599px) {
+    .portfolio {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Footer */
 .footer {
     background: #111;
@@ -434,9 +475,11 @@ header {
     padding: 2.5em 0;
     font-size: var(--fs-h3);
 }
-.footer p{
+
+.footer p {
     font-size: 20px;
 }
+
 .footer a {
     color: inherit;
     text-decoration: none;
@@ -496,22 +539,27 @@ body.dark-theme {
     --color-accent: var(--color-dark-theme-accent);
 }
 
+/* Dark Mode Toggle */
 .darkmode {
-    display: fixed;
-    align-items: left;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    z-index: 1000;
 }
 
 .change-theme {
     font-size: 1.5rem;
-    margin-right: 5.5rem;
     cursor: pointer;
 }
 
+/* Button Container */
 .btn-con {
     display: flex;
     align-self: flex-start;
 }
 
+/* Main Button Styles */
 .main-btn {
     border-radius: 30px;
     color: inherit;
