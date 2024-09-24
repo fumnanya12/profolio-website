@@ -1,11 +1,15 @@
 /* Color Variables */
 :root {
     --color-light: #fff;
+    --color-text-light: #fff;
     --color-dark: #303030;
+    --color-text-dark: #000;
     --color-accent: #16e0bd;
-    --color-dark-theme-light: #303030;
-    --color-dark-theme-dark: #fff;
-    --color-dark-theme-accent: #16e0be;
+    --color-dark-theme-light: #2c2c2c;
+    --color-dark-theme-text-light: #2c2c2c;
+    --color-dark-theme-dark: #fbf4f4c6;
+    --color-dark-theme-text-dark: #fbf4f4;
+    --color-dark-theme-accent: #12ac92;
 }
 
 /* General Styles */
@@ -47,7 +51,7 @@ html {
 
 body {
     background: var(--color-light);
-    color: var(--color-dark);
+    color: var(--color-text-dark);
     margin: 0;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
@@ -145,7 +149,7 @@ header {
 .nav {
     background: var(--color-dark);
     position: fixed;
-    color: var(--color-light);
+    color: var(--color-text-light);
     top: 0;
     bottom: 0;
     left: 0;
@@ -295,7 +299,7 @@ header {
 .my-services {
     background-color: var(--color-light);
     background-size: cover;
-    color: var(--color-dark);
+    color: var(--color-text-dark);
     text-align: center;
 }
 
@@ -353,7 +357,7 @@ header {
 /* About Me Section */
 .about-me {
     background-color: var(--color-dark);
-    color: var(--color-light);
+    color: var(--color-text-light);
 }
 
 .about-body {
@@ -414,7 +418,7 @@ header {
 /* My Work Section */
 .my-work {
     background-color: var(--color-dark);
-    color: var(--color-light);
+    color: var(--color-text-light);
     text-align: center;
 }
 
@@ -519,7 +523,9 @@ header {
 /* Dark Theme */
 body.dark-theme {
     --color-light: var(--color-dark-theme-light);
+    --color-text-light: var(--color-dark-theme-text-light);
     --color-dark: var(--color-dark-theme-dark);
+    --color-text-dark: var(--color-dark-theme-text-dark);
     --color-accent: var(--color-dark-theme-accent);
 }
 
