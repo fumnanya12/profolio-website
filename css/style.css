@@ -25,7 +25,7 @@
     --fs-h1: 3rem;
     --fs-h2: 2.5rem;
     --fs-h3: 1.75rem;
-    --fs-body: 1rem;
+    --fs-body: 1.2em;
 
     --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25),
         0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
@@ -36,7 +36,7 @@
         --fs-h1: 4.5rem;
         --fs-h2: 3.75rem;
         --fs-h3: 2.5rem;
-        --fs-body: 1.35em;
+        --fs-body: 1.8rem;
     }
 }
 
@@ -78,24 +78,7 @@ strong {
     outline-offset: 3px;
 }
 
-/* Buttons */
-.btn {
-    display: inline-block;
-    padding: .5em 2.5em;
-    background: var(--color-accent);
-    color: var(--color-dark);
-    text-decoration: none;
-    cursor: pointer;
-    font-size: .8rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: var(--fw-bold);
-    transition: transform 200ms ease-in-out;
-}
 
-.btn:hover {
-    transform: scale(1.1);
-}
 
 /* Typography */
 h1,
@@ -200,7 +183,7 @@ header {
     border: 0;
     cursor: pointer;
     position: absolute;
-    right: 1em;
+    right: 2.5em;
     top: 1em;
     z-index: 1000;
 }
@@ -315,6 +298,7 @@ header {
     color: var(--color-dark);
     text-align: center;
 }
+
 
 .section__title--services {
     color: var(--color-accent);
