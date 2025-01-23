@@ -557,3 +557,107 @@ body.dark-theme {
     transform: translateX(0);
     transition: all 0.4s ease-in;
 }
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    body {
+        font-size: 1rem; /* Adjust font size for readability on smaller screens */
+    }
+
+    section {
+        padding: 2em 1em; /* Reduce padding for smaller screens */
+    }
+
+    header {
+        flex-direction: row-reverse; /* Place toggle button on the left */
+        justify-content: space-between;
+        padding: 1em;
+    }
+
+    .logo {
+        max-width: 70px; /* Smaller logo size */
+        
+    }
+
+    .nav__link {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    .nav {
+        padding: 2em 1em; /* Adjust padding */
+    }
+
+    .btn {
+        padding: .4em 1.5em; /* Smaller buttons */
+        font-size: 0.7rem;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.5rem; /* Adjust heading sizes */
+    }
+
+    .intro__img {
+        min-width: 100%; /* Full-width images */
+    }
+
+    .services {
+        flex-direction: column; /* Stack services */
+    }
+
+    .service {
+        margin-bottom: 2em;
+    }
+
+    .portfolio {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust portfolio grid */
+    }
+
+    .about-body {
+        grid-template-columns: 1fr; /* Stack about section */
+        grid-template-areas: 
+            "title"
+            "subtitle"
+            "img"
+            "text";
+    }
+
+    .about-me__img {
+        margin: 0 auto; /* Center image */
+    }
+
+    .social-list {
+        flex-direction: column; /* Stack social links */
+    }
+
+    .social-list__item {
+        margin-bottom: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2, h3 {
+        font-size: 1.2rem; /* Further adjust heading sizes for very small screens */
+    }
+
+    .btn {
+        padding: .3em 1em;
+        font-size: 0.6rem;
+    }
+
+    .portfolio {
+        grid-template-columns: 1fr; /* Single-column layout for small screens */
+    }
+
+    .footer {
+        font-size: 0.8rem;
+        padding: 1.5em 0;
+    }
+
+    .logo {
+        max-width: 60px;
+    }
+
+    .nav__link {
+        font-size: 0.9rem;
+    }
+}
