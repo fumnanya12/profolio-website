@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devobi portfolio Website </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"  integrity="">
+
+
+    <!---font-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans
+    +Pro:300,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/Projects.css">
+
+</head>
+<body>
+    
+    <header>
+      
+        <div class="darkmode">
+            <i class="fa-solid fa-sun change-theme" id="theme-button"></i>
+        </div>
+
+        <button class="nav-toggle" aria-label="toogle naviagation ">
+            <span class="hamburger"></span>
+
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="/index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="/index.html#services" class="nav__link">My services </a></li>
+                <li class="nav__item"><a href="/index.html#about" class="nav__link">About me </a></li>
+                <li class="nav__item"><a href="/index.html#work" class="nav__link">My work</a></li>
+
+            </ul>
+        </nav>
+    </header>
+ <!-- Introduction-->
+ <section class="intro"> 
+    <h1 class="section__title section__title--intro">
+        The title <strong> of my project</strong>
+
+    </h1>
+    <p class="section__subtitle section__subtitle--intro">FOOD RIGHT CMS</p>
+    <a href="https://foodright.tech/"><img src="foodrightlogo.jpg" width="30px"  alt="A picture of me" class="intro__img"></a>
+</section>
+
+<div class="portfolio-item-individual">
+<p> FoodRight is a PHP-based content management system (CMS) 
+    designed to help users explore, manage, and
+     organize recipes while promoting healthier eating habits.
+
+</p>
+<P>App Link</P>
+
+<p><a href="https://foodright.tech/">FoodRight</a></p>
+<p><a href="https://github.com/fumnanya12/Foodright">Source code </a></p>
+
+
+<img src="Foodright-front-page.png" alt="">
+<img src="foodright-receipe.png" alt="">
+<img src="Foodright-database.png" alt="">
+
+
+
+<p></p>
+<h3>Features:</h3>
+<ul>
+    <li>Browse and view a list of recipes</li>
+    <li>Search recipes by keyword</li>
+    <li>Filter recipes by category (e.g., Breakfast, Lunch, Dinner, Dessert)</li>
+    <li>Sort recipes by title, created date, or updated date</li>
+    <li>Pagination for easy navigation through recipes</li>
+    <li>View detailed recipe pages (ingredients, instructions, cook time, servings)</li>
+    <li>SEO-friendly URLs (/id/slug/)</li>
+    <li>Responsive design for mobile and desktop</li>
+    <li>Admin authentication system (login/logout)</li>
+    <li>Create, update, and delete recipes (CRUD functionality)</li>
+    <li>Image upload with placeholder fallback</li>
+    <li>External API integration for importing recipes</li>
+</ul>
+
+<h3>Technologies Used:</h3>
+<ul>
+    <li>HTML5: Structure of the web pages</li>
+    <li>CSS3: Styling and responsive layout (Flexbox)</li>
+    <li>PHP: Server-side logic and application functionality</li>
+    <li>PDO (PHP Data Objects): Secure database interactions</li>
+    <li>MySQL: Relational database for storing recipes</li>
+    <li>Apache (.htaccess): URL rewriting for SEO-friendly links</li>
+    <li>XAMPP: Local development environment</li>
+    <li>JSON API: Used to fetch external recipe data</li>
+    <li>Git & GitHub: Version control and collaboration</li>
+</ul>
+</div>
+
+   
+    <!--Footer-->
+    <footer class="footer">
+
+        <a href="mailto:fumnanya.obi@gmail.com" class="footer-link">fumnanya.obi@gmail.com</a>
+    <ul class="social-list">
+         <li class="social-list__item"> 
+            <a class=" social-list__link" href="mailto:fumnanya.obi@gmail.com"><i class="fa-brands fa-google"></i></a>
+        </li>
+
+         
+         <li class="social-list__item">
+            <a class=" social-list__link" href="https://www.instagram.com/fumnanya_obi/">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </li>
+         <li class="social-list__item"> 
+            <a class=" social-list__link" href="https://www.linkedin.com/in/fumnanyaobi/">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </li>
+         <li class="social-list__item">
+             <a class=" social-list__link" href="https://github.com/fumnanya12"> 
+                <i class="fa-brands fa-github"></i>
+            </a>
+            </li>
+
+    </ul>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

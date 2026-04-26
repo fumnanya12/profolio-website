@@ -65,11 +65,10 @@ section {
 img {
     display: block;
     max-width: 100%;
-    height: auto;
 }
 
 .portfolio img {
-    height: auto;
+    height: 300px;
     width: 100%;
 }
 
@@ -432,6 +431,9 @@ header {
     overflow: hidden;
 }
 
+.portfolio__img img{
+    height: auto;
+}
 .portfolio__img {
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
